@@ -66,9 +66,9 @@ def configure_PGID(args):
         args.guidance_strength = 0.045
 
     elif args.attack_type == "forgery":
-        args.stopping_timestep = 8 #if args.wm_type == "PRC" else 15
+        args.stopping_timestep = 7 if args.wm_type == "PRC" else 15
         args.num_skip_inversion = 3
-        args.guidance_strength = 0.005
+        args.guidance_strength = 0.001
 
     else:
         raise ValueError(

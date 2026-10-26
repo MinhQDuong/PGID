@@ -17,7 +17,7 @@ from prompts import PROMPTS_LIST
 
 # Args
 parser = argparse.ArgumentParser(description="Perform attack and defense", parents=[gs_parser, tr_parser, prc_parser, t2smark_parser, pgid_parser], conflict_handler='resolve') 
-parser.add_argument("--out_dir", type=str, default="out_results_TR", help="Directory to save results")
+parser.add_argument("--out_dir", type=str, default="out_results", help="Directory to save results")
 parser.add_argument("--attack_type", type=str, default="removal", choices=["removal", "forgery"])
 
 # For forgery attacks
