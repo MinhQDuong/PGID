@@ -4,7 +4,7 @@
 Official Implementation of the paper *"PGID: Progressive Guided Inversion and Denoising for Robust Watermark Detection"*.
 
 <p align="center">
-  <img src="assets/teaser.jpg" alt="PGID Framework" width="100%">
+  <img src="assets/teaser.jpg" alt="PGID Framework" width="90%">
 </p>
 
 ## Overview
