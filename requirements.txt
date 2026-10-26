@@ -1,0 +1,16 @@
+cryptography==43.0.3
+diffusers==0.31.0
+galois==0.4.10
+ldpc==2.4.1
+numpy==2.2.6
+pandas==2.2.3
+Pillow==12.2.0
+scipy==1.13.1
+torch==2.5.1
+torchvision==0.20.1
+tqdm==4.67.0
+transformers==4.46.3
+accelerate==1.1.1
+sentencepiece==0.2.0
+ftfy==6.3.1
+
