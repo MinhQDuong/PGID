@@ -1,5 +1,5 @@
 # Originally from https://github.com/lthero-big/A-watermark-for-Diffusion-Models
-# We modify code from https://github.com/and-mill/semantic-forgery - Use watermark signal approach instead of provider
+# We modify code from https://github.com/and-mill/semantic-forgery
 
 import typing
 import argparse
