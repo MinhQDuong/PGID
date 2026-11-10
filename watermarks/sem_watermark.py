@@ -66,7 +66,7 @@ class SemanticWatermark():
             # Get different messages for PRC
             # Get different master keys, session keys and messages for T2SMark
    
-            offset = idx # Using idx as offset to get different watermark signals for each latent
+            offset = idx # Using idx as offset
 
             watermark = cls(
                 latent_shape=latent_shape,
