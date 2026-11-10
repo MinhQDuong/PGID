@@ -62,11 +62,9 @@ class SemanticWatermark():
 
         for idx in tqdm(range(target_start_index, target_end_index)):
 
-            # Here offset is used to get different keys, nonces and messages for GS.
+            # Here offset is used to get different keys, nonces, and messages for GS.
             # Get different messages for PRC
             # Get different master keys, session keys and messages for T2SMark
-            # Different offset will result in different watermark signals except for Tree-Ring
-            # where by design the same signal is used for all latents.
    
             offset = idx # Using idx as offset to get different watermark signals for each latent
 
