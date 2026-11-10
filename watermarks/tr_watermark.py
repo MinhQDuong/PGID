@@ -1,6 +1,5 @@
 # Originally by https://github.com/YuxinWenRick/tree-ring-watermark
-# We modify code from https://github.com/and-mill/semantic-forgery - Use watermark signal approach instead of provider
-
+# We modify code from https://github.com/and-mill/semantic-forgery
 from tqdm import tqdm
 import copy
 import typing
