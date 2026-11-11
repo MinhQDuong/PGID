@@ -23,7 +23,7 @@ class SemanticWatermark():
         if isinstance(latent_shape, tuple):
             latent_shape = torch.Size(latent_shape)
             self.latent_shape = latent_shape
-            self.batch_size = latent_shape[0] # The number of images that would carry this watermark signal
+            self.batch_size = latent_shape[0] # The number of images that would carry this watermark
             self.num_channels = latent_shape[1]
             self.latent_resolution = latent_shape[2]
 
@@ -43,11 +43,11 @@ class SemanticWatermark():
                            **provider_args: dict) -> typing.Generator:
 
         """
-        Returns a generator which consists of different watermark signals for each latent batch.
+        Returns a generator that consists of different watermarks for each latent batch.
         
 
         @param total_num_signals: Total number of watermark signals to generate.
-        @param latent_shape: Shape of the latent tensor with batch dim . e.g. (1, 4, 64, 64)
+        @param latent_shape: Shape of the latent tensor with batch dim. e.g. (1, 4, 64, 64)
         @param w_seed: Seed for the watermark generation.
         @param target_start_index: Start index of the range of latents to generate watermarks for.
         @param target_end_index: End index of the range of latents to generate watermarks for.
@@ -64,7 +64,7 @@ class SemanticWatermark():
 
             # Here offset is used to get different keys, nonces, and messages for GS.
             # Get different messages for PRC
-            # Get different master keys, session keys and messages for T2SMark
+            # Get different master keys, session keys, and messages for T2SMark
    
             offset = idx # Using idx as offset
 
