@@ -46,7 +46,7 @@ class SemanticWatermark():
         Returns a generator that consists of different watermarks for each latent batch.
         
 
-        @param total_num_signals: Total number of watermark signals to generate.
+        @param total_num_signals: Total number of watermarks to generate.
         @param latent_shape: Shape of the latent tensor with batch dim. e.g. (1, 4, 64, 64)
         @param w_seed: Seed for the watermark generation.
         @param target_start_index: Start index of the range of latents to generate watermarks for.
