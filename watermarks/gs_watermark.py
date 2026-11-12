@@ -22,7 +22,7 @@ class GSWatermark(SemanticWatermark):
                  message_width_in_bytes: int = 32,  # (channels/f_c) * f_h * f_w // 8
                  num_replications: int = 64,
                  l: int = 1,
-                 offset: int = 0, # Used to choose the message, key and nonce from the list. Different offset will result in different watermark signals.
+                 offset: int = 0, # Used to choose the message, key and nonce from the list.
                  message: typing.Optional[str] = None,
                  key: str = None,
                  nonce: str = None,
