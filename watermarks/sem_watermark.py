@@ -13,7 +13,7 @@ class SemanticWatermark():
                  **kwargs):
 
         """
-        Base class to config different watermarking schemes. A Watermark object defines a watermark signal
+        Base class to config different watermarking schemes. A Watermark object defines a semantic watermark
 
         @param latent_shape: Shape of the latent tensor with batch dim either tuple or torch.shape. e.g. (1, 4, 64, 64)
         @param dtype: device
@@ -71,7 +71,7 @@ class SemanticWatermark():
             watermark = cls(
                 latent_shape=latent_shape,
                 offset=offset,
-                w_seed=w_seed, # Same seed gives same TR signal
+                w_seed=w_seed, # Same seed gives same TR pattern
                 **provider_args,
             )
 
