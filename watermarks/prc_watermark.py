@@ -173,7 +173,7 @@ class PRCWatermark(SemanticWatermark):
                         
         @return: dict
         """
-        batch_size = self.batch_size # The number of images that would carry this watermark
+        batch_size = self.batch_size
 
         # Get message
         message_bytes = self.message 
