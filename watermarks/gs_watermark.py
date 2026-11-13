@@ -28,7 +28,7 @@ class GSWatermark(SemanticWatermark):
                  nonce: str = None,
                  **kwargs):
         """
-            Configure a Gaussian Shading watermark signal.
+            Configure a Gaussian Shading watermark.
 
             Uses predefined messages, keys, and nonces (from the list).
 
