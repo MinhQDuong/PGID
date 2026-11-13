@@ -95,12 +95,11 @@ class T2SMarkWatermark(SemanticWatermark):
     def get_wm_latents(self, **kwargs) -> typing.Dict[str, typing.Any]:
         """
         Get Watermarked latents - T2SMark encoding
-        The same master key, session key and message for a watermark signal
                         
         @return: dict
         """
 
-        batch_size = self.batch_size # The number of images that would carry this watermark signal
+        batch_size = self.batch_size # The number of images that would carry this watermark
         
         # get the message
         message_bytes = self.message 
@@ -175,7 +174,7 @@ class T2SMarkWatermark(SemanticWatermark):
         """
         Recover messages from latents
 
-        @param latents: latent either tensor with batch dim
+        @param latents: latent tensor with batch dim
         @return: dict
         """
         if isinstance(latents, np.ndarray):
