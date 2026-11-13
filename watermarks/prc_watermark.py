@@ -168,13 +168,12 @@ class PRCWatermark(SemanticWatermark):
     def get_wm_latents(self, **kwargs) -> typing.Dict[str, typing.Any]:
         """
         Provide watermark latents and barcodes for the given batch size.
-        All of the latents in the batch will carry the same watermark signal (for PRC it's same key and message).
         Generate randomized PRC latents sharing one message and encoding key.
         Random payload bits, encoding noise, and magnitudes vary per latent.
                         
         @return: dict
         """
-        batch_size = self.batch_size # The number of images that would carry this watermark signal
+        batch_size = self.batch_size # The number of images that would carry this watermark
 
         # Get message
         message_bytes = self.message 
