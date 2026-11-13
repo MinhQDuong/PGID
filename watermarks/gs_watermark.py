@@ -117,8 +117,7 @@ class GSWatermark(SemanticWatermark):
         encrypted_bits_str = ''.join(format(byte, '08b') for byte in encrypted_bytes)  # encrypted_bits_str = m_bits
 
         # Embed the encrypted message into the latent space using Gaussian sampling
-        # Each latent zT is sampled differently but based on the same encrypted message, key and nonce. 
-        # This is because we want to have different latents for each image in the batch, but they all carry the same watermark signal.
+        # Each latent zT is sampled differently but based on the same encrypted message, key, and nonce. 
         latents_torch = []
         for _ in range(batch_size):
             pixel_values = []
